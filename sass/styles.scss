@@ -3,5 +3,8 @@
 
 header {
 	position: fixed;
-	width: span(4);
+	@include span(1 of 4);
+}
+article {
+	@include span(3 of 4);
 }
