@@ -1,6 +1,17 @@
 @import "compass";
 @import "susy";
 
+$font-mono: "courier new", monospace;
+
+pre,
+code {
+	font-family: $font-mono;
+}
+pre {
+	background-color: #fefefe;
+	padding: 7px;
+	white-space: pre;
+}
 header {
 	position: fixed;
 	@include span(1 of 4);
