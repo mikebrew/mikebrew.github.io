@@ -6,5 +6,5 @@ header {
 	@include span(1 of 4);
 }
 article {
-	@include span(3 of 4);
+	@include span(last 3 of 4);
 }
