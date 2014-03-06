@@ -40,6 +40,11 @@ article {
 
 // Code styles
 $code-color: #c60505;
+$terminal-color: #333;
+.terminal {
+	color: invert($terminal-color);
+	background-color: $terminal-color;
+}
 .ca {
 	color: #c60505;
 }
