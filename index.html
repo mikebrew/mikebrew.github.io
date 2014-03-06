@@ -11,12 +11,32 @@
 		<li><a href="#rvm">RVM</a></li>
 	</ul>
 </nav>
-<h1>RVM</h1>
-<section class="rvm" id="rvm">
+<div id="rvm">
+	<h1>RVM</h1>
 	<article>
 		<h2>Copying Gemsets</h2>
-		<pre><code>$ rvm gemset copy 1.8.7@rails3 1.9.2-head@rails3</code></pre>
+		<pre class="code">
+        	$<span class="ca">rvm gemset</span> <span class="cb">copy</span> 1.8.7@rails3 1.9.2-head@rails3
+        </pre>
 	</article>
-</section>
+    <article>
+  <h2>Reset to pre-RVM state</h2>
+  <pre class="code">
+    $ rvm reset
+  </pre>
+</article>
+<article>
+  <h2>Use system ruby (as if no rvm)</h2>
+  <pre class="code">
+    $ rvm system
+  </pre>
+</article>
+<article>
+  <h2>Empty gemset</h2>
+  <pre class="code">
+    $ rvm gemset empty my gems
+  </pre>
+</article>
+</div>
 </body>
 </html>

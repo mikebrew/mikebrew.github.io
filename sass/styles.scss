@@ -1,21 +1,48 @@
 @import "compass";
 @import "susy";
 
-$font-mono: "courier new", monospace;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic);
 
+$font-mono: "courier new", monospace;
+$font-opensans: 'Open Sans', sans-serif;
+$font-gentium: 'Gentium Book Basic', serif;
+
+body {
+	font-family: $font-gentium;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: $font-opensans;
+}
+h2 {
+	font-weight: 300;
+}
 pre,
 code {
 	font-family: $font-mono;
 }
 pre {
-	background-color: #d8f1ff;
+	background-color: #eeeeee;
 	padding: 7px;
 	white-space: pre;
+	border: solid 1px #CCC;
 }
 header {
 	position: fixed;
-	@include span(1 of 4);
+	//@include span(1 of 4);
 }
 article {
-	@include span(last 3 of 4);
+	//@include span(last 3 of 4);
+}
+
+// Code styles
+$code-color: #c60505;
+.ca {
+	color: #c60505;
+}
+.cb {
+	color: complement($code-color);
 }
