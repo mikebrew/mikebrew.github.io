@@ -8,8 +8,11 @@ $font-mono: "courier new", monospace;
 $font-opensans: 'Open Sans', sans-serif;
 $font-gentium: 'Gentium Book Basic', serif;
 
+
+
 body {
 	font-family: $font-gentium;
+	@include container(60em);
 }
 h1,
 h2,
@@ -31,12 +34,19 @@ pre {
 	border: solid 1px #CCC;
 }
 header {
-	position: fixed;
-	//@include span(1 of 4);
+	
 }
 article {
-	//@include span(last 3 of 4);
+	
 }
+#nav {
+	//position: fixed;
+	@include span(25%);
+}
+#content {
+	@include span(last 75%);
+}
+
 
 // Code styles
 $code-color: #c60505;
