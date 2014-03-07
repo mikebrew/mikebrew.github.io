@@ -7,30 +7,48 @@
 <body>
 <nav id="nav">
 	<h1>Code Docs</h1>
+	<p>Michael Brewington</p>
+	<p><a href="http://github.com/mikebrew">github.com/mikebrew</a></p>
 	<ul>
 		<li><a href="#rvm">RVM</a></li>
 	</ul>
 </nav>
 <div id="content">
-<div id="rvm">
-	<h1>RVM</h1>
-	<article>
-		<h2>Copying Gemsets</h2>
-		<pre class="code">$<span class="ca">rvm gemset</span> <span class="cb">copy</span> 1.8.7@rails3 1.9.2-head@rails3</pre>
-	</article>
-    <article>
-    	<h2>Reset to pre-RVM state</h2>
-		<pre class="code">$ rvm reset</pre>
-	</article>
-	<article>
-		<h2>Use system ruby (as if no rvm)</h2>
-		<pre class="terminal">$ rvm system</pre>
-	</article>
-	<article>
-		<h2>Empty gemset</h2>
-		<pre class="terminal">$ rvm gemset empty my gems</pre>
-	</article>
-</div>
+	<div id="rvm">
+		<h1>RVM</h1>
+		<article>
+			<h2>Copying Gemsets</h2>
+			<pre class="code">$<span class="ca">rvm gemset</span> <span class="cb">copy</span> 1.8.7@rails3 1.9.2-head@rails3</pre>
+		</article>
+	    <article>
+	    	<h2>Reset to pre-RVM state</h2>
+			<pre class="terminal">rvm reset</pre>
+		</article>
+		<article>
+			<h2>Use system ruby (as if no rvm)</h2>
+			<pre class="terminal">rvm system</pre>
+		</article>
+		<article>
+			<h2>Empty gemset</h2>
+			<pre class="terminal">rvm gemset empty my gems</pre>
+		</article>
+		<article>
+			<h2>List Known Rubies</h2>
+			<pre class="terminal">rvm list known</pre>
+		</article>
+		<article>
+			<h2>Install Ruby Version</h2>
+			<pre class="terminal">rvm install 1.9.3</pre>
+		</article>
+		<article>
+			<h2>Use Ruby Version</h2>
+			<pre class="terminal">rvm use 1.9.3</pre>
+		</article>
+		<article>
+			<h2>Use and set as default</h2>
+			<pre class="terminal">rvm use 1.9.2 --default</pre>
+		</article>
+	</div>
 </div>
 </body>
 </html>

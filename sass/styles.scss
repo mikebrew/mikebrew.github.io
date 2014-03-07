@@ -40,7 +40,8 @@ article {
 	
 }
 #nav {
-	//position: fixed;
+	position: fixed;
+	top: 0;
 	@include span(25%);
 }
 #content {
@@ -54,6 +55,7 @@ $terminal-color: #333;
 .terminal {
 	color: invert($terminal-color);
 	background-color: $terminal-color;
+	&:before {content:"$ ";}
 }
 .ca {
 	color: #c60505;
