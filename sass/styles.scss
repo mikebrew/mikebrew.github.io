@@ -8,7 +8,8 @@ $font-mono: "courier new", monospace;
 $font-opensans: 'Open Sans', sans-serif;
 $font-gentium: 'Gentium Book Basic', serif;
 
-
+// Variables
+$color-pink: #cf17b1;
 
 body {
 	font-family: $font-gentium;
@@ -65,4 +66,7 @@ $terminal-color: #ddf4f9;
 }
 .comment {
 	color: #AAA;
+}
+.c-command {
+	color: $color-pink;
 }
