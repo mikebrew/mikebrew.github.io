@@ -40,7 +40,7 @@ pre {
 	background-color: $pre-color;
 	padding: 7px;
 	white-space: pre;
-	border: solid 5px darken($pre-color, 2%);
+	//border: solid 5px darken($pre-color, 2%);
 }
 header {
 	
@@ -57,17 +57,27 @@ article {
 	@include span(last 75%);
 }
 
-
+.section {
+	padding: 5px;
+}
 // Code styles
 $code-color: #c60505;
 $terminal-color: $color-grey;
 .terminal {
 	color: invert($terminal-color);
 	background-color: $terminal-color;
+	border: solid 5px darken($pre-color, 2%);
+	&:before {
+		//content:"$ ";
+		//color: darken($terminal-color, 25%);
+	}
+}
+code {
 	&:before {
 		content:"$ ";
 		color: darken($terminal-color, 25%);
 	}
+
 }
 .ca {
 	color: #c60505;

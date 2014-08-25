@@ -6,170 +6,20 @@
 
 <body>
 <nav id="nav">
-	<h1>Code Docs</h1>
-	<p>Michael Brewington</p>
-	<p><a href="http://github.com/mikebrew">github.com/mikebrew</a></p>
+	<h1>Michael<br>
+	  Brewington
+	</h1>
 	<ul>
-		<li><a href="#git">GIT</a></li>
-		<li><a href="#rvm">RVM</a></li>
-		<li><a href="#susy">Susy</a></li>
+		<li><a href="code.html">Code Docs</a></li>
 	</ul>
 </nav>
 <div id="content">
-	<div id="git" class="section">
-		<h1>GIT</h1>
-		<div>
-			<h2>Overview</h2>
-			<h3>Configure</h3>
-			<p>Set up your user name and email address so that your commits are recorded properly.</p>
-			<pre class="terminal">git config --global user.name "My Name"</pre>
-			<pre class="terminal">git config --global user.email "user@email.com"</pre>
-		</div>
-		<div>
-			<article><h2>Basic Git Worflow Example</h2>
-			<h3>Initialize, stage and commit</h3>
-			<p>Initialize a new git repository, then stage all the files in the directory and finally commit the initial snapshot</p>
-			<pre class="terminal">git <span class="c-command">init</span></pre>
-			<pre class="terminal">git add .</pre>
-			<pre class="terminal">git commit -m 'initial commit'</pre></article>
-		</div>
-		<div>
-			<h2>Setup & Init</h2>
-			<p>Git configuration, and repository initialization & cloning.</p>
-			<pre class="terminal">git <span class="c-command">config</span> <span class="c-command-post">[key] [value]</span></pre>
-			<pre class="terminal">git <span class="c-command">config</span> <span class="c-command-option">--global</span> <span class="c-command-post">[key] [value]</span></pre>
-			<pre class="terminal">git <span class="c-command">init</span></pre>
-			<pre class="terminal">git <span class="c-command">clone</span> <span class="c-command-post">[url]</span></pre>
-			<pre class="terminal">git <span class="c-command">help</span> [command]</pre>
-		</div>
-		<div>
-			<h2>Stage & Snapshot</h2>
-			<p>Working with snapshots and the Git staging area.</p>
-			<pre class="terminal">git <span class="c-command">status</span></pre>
-			<pre class="terminal">git <span class="c-command">add</span> <span class="c-command-post">[file]</span></pre>
-			<pre class="terminal">git <span class="c-command">reset</span> <span class="c-command-post">[file]</span></pre>
-			<pre class="terminal">git <span class="c-command">diff</span></pre>
-			<pre class="terminal">git <span class="c-command">diff</span> --staged</pre>
-			<pre class="terminal">git <span class="c-command">commit</span></pre>
-			<pre class="terminal">git <span class="c-command">rm</span> [file]</pre>
-		</div>
-		<div>
-			<article>
-				<h2>Branch & Merge</h2>
-				<p>Working with Git branches and line stash.</p>
-				<h3>List branches</h3>
-				<pre class="terminal">git branch</pre>
-			</article>
-			<article>
-				<h3>Create a new branch</h3>
-				<pre class="terminal">git branch [branch-name]</pre>
-			</article>
-			<article>
-				<h3>Switch to another branch</h3>
-				<pre class="terminal">git checkout [branch]</pre>
-			</article>
-			<article>
-				<h3>Create a branch and immediately switch to it</h3>
-				<pre class="terminal">git checkout -b [branch]</pre>
-			</article>
-			<h3>Merge a branch</h3>
-			<p>merge another branch into your current active one and record the merge as a commit</p>
-			<pre class="terminal">git merge [branch]</pre>
-			
-			<h3>Show commit logs</h3>
-			<pre class="terminal">git log</pre>
-			
-			<h3>Stash away changes</h3>
-			<p>stash away the current uncommitted modifications in your working directory temporarily</p>
-			<pre class="terminal">git stash</pre>
-			
-			<h3>Re-apply stash</h3>
-			<pre class="terminal">git stash apply</pre>
-		</div>
-		<div>
-			<h2>Share & Update</h2>
-			<p>Fetching, merging and working with updates from another repository.</p>
-			<h3>Add a git URL as an alias</h3>
-			<pre class="terminal">git remote add [alias] [url]</pre>
-			<h3>Fetch branches</h3>
-			<p>fetch down all the branches from the Git remote</p>
-			<pre class="terminal">git fetch [alias]</pre>
-			<h3>Merge branch to current</h3>
-			<p>merge a branch on the server into your currently active branch to bring it up to date</p>
-			<pre class="terminal">git merge [alias]/[branch]</pre>
-			<h3>Push update</h3>
-			<p>push the work on your branch to update that branch on the remote git repository</p>
-			<pre class="terminal">git push [alias] [branch]</pre>
-			<h3>Pull changes</h3>
-			<p>fetch from the URL tracked by the current branch and immediately try to merge in the tracked branch</p>
-			<pre class="terminal">git pull</pre>
-		</div>
-		<div>
-			<h2>Inspect & Compare</h2>
-			<p>Examining logs, diffs and object information</p>
-			<h3>Show log</h3>
-			<p>show the commit history for the currently active branch</p>
-			<pre class="terminal">git log</pre>
-			<h3>Compare commits</h3>
-			<p>show the commits on branchA that are not on branchB</p>
-			<pre class="terminal">git log branchB..branchA</pre>
-			<h3>Show changes to file</h3>
-			<p>show the commits that change file, even across renames</p>
-			<pre class="terminal">git log --follow [file]</pre>
-			<h3>Compare difference in commits</h3>
-			<p>show the diff of what is on branchA that is not on branchB</p>
-			<pre class="terminal">git diff branchB...branchA</pre>
-			<h3>Show human-readable</h3>
-			<p>show any object in Git in human-readable format</p>
-			<pre class="terminal">git show [SHA]</pre>
-		</div>
-	</div>
-	<div id="rvm" class="section">
-		<h1>RVM</h1>
-		<div>
-			<h2>Add default RVM state to project</h2>
-			<pre class="terminal">touch .ruby-version</pre>
-			<pre class="terminal">echo "1.9.3@gemset-name" > .ruby-version</pre>
-		<div>
-			<h2>Copying Gemsets</h2>
-			<pre class="terminal"><span class="ca">rvm gemset</span> <span class="cb">copy</span> 1.8.7@rails3 1.9.2-head@rails3</pre>
-		</div>
-	    <div>
-	    	<h2>Reset to pre-RVM state</h2>
-			<pre class="terminal">rvm reset</pre>
-		</div>
-		<div>
-			<h2>Use system ruby (as if no rvm)</h2>
-			<pre class="terminal">rvm system</pre>
-		</div>
-		<div>
-			<h2>Empty gemset</h2>
-			<pre class="terminal">rvm gemset empty my gems</pre>
-		</div>
-		<div>
-			<h2>List Known Rubies</h2>
-			<pre class="terminal">rvm list known</pre>
-		</div>
-		<div>
-			<h2>Install Ruby Version</h2>
-			<pre class="terminal">rvm install 1.9.3</pre>
-		</div>
-		<div>
-			<h2>Use Ruby Version</h2>
-			<pre class="terminal">rvm use 1.9.3</pre>
-		</div>
-		<div>
-			<h2>Use and set as default</h2>
-			<pre class="terminal">rvm use 1.9.2 --default</pre>
-		</div>
-	</div>
-	<div id="susy" class="section">
-		<h1>Susy</h1>
-		<div>
-			<h2>Grid Widths</h2>
-			<pre class="code"><span class="comment">// grid span</span><br>.item { @include span(3); }</pre>
-		</div>
-	</div>
+<div id="git" class="section">
+	  <h1>WELCOME</h1>
+  <div>
+	<h2>QUICK LINKS</h2>
+			<h3><a href="http://brewingtonmedia.com">Brewington Media</a></h3>
+  </div>
 </div>
 </body>
 </html>
