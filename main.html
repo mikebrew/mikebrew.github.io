@@ -15,7 +15,7 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="#page2">Page Two</a></li>
+			<li><a href="#page2">GIT</a></li>
             <li><a href="#page3">Page Three</a></li>
 			<li><a href="#page4">Page Four</a></li>
 		</ul>		
@@ -27,10 +27,128 @@
 
 <div data-role="page" id="page2">
 	<div data-role="header">
-		<h1>Page Two</h1>
+		<h1>GIT</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+		<div id="git" class="section">
+		  <div>
+			<h2>Overview</h2>
+			<h3>Configure</h3>
+			<p>Set up your user name and email address so that your commits are recorded properly.</p>
+			<div class="terminal">
+				<pre><span class="comment">// Set global name of user</span></pre>
+				<pre><code>git <span class="c-command">config</span> <span class="c-command-option">--global</span> <span class="c-command-post">user.name "My Name"</span></code></pre>
+			</div>
+			<div class="terminal">
+				<pre><code>git <span class="c-command">config</span> <span class="c-command-option">--global</span> <span class="c-command-post">user.email "user@email.com"</span></code></pre>
+			</div>
+		</div>
+		<div>
+			<article><h2>Basic Git Worflow Example</h2>
+			<h3>Initialize, stage and commit</h3>
+			<p>Initialize a new git repository, then stage all the files in the directory and finally commit the initial snapshot</p>
+			<div class="terminal">
+				<pre><span class="comment">// Initialize a new repository</span></pre>
+				<pre><code>git <span class="c-command">init</span></code></pre>
+			</div>
+			<div class="terminal">
+				<pre><code>git <span class="c-command">add</span> <span class="c-command-post">.</span></code></pre>
+			
+				<pre><code>git <span class="c-command">commit</span> <span class="c-command-option">-m</span> <span class="c-command-post">'initial commit'</span></code></pre>
+			</div>
+			</article>
+		</div>
+		<div>
+			<h2>Setup & Init</h2>
+			<p>Git configuration, and repository initialization & cloning.</p>
+			<pre class="terminal">git <span class="c-command">config</span> <span class="c-command-post">[key] [value]</span></pre>
+			<pre class="terminal">git <span class="c-command">config</span> <span class="c-command-option">--global</span> <span class="c-command-post">[key] [value]</span></pre>
+			<pre class="terminal">git <span class="c-command">init</span></pre>
+			<pre class="terminal">git <span class="c-command">clone</span> <span class="c-command-post">[url]</span></pre>
+			<pre class="terminal">git <span class="c-command">help</span> <span class="c-command-post">[command]</span></pre>
+		</div>
+		<div>
+			<h2>Stage & Snapshot</h2>
+			<p>Working with snapshots and the Git staging area.</p>
+			<pre class="terminal">git <span class="c-command">status</span></pre>
+			<pre class="terminal">git <span class="c-command">add</span> <span class="c-command-post">[file]</span></pre>
+			<pre class="terminal">git <span class="c-command">reset</span> <span class="c-command-post">[file]</span></pre>
+			<pre class="terminal">git <span class="c-command">diff</span></pre>
+			<pre class="terminal">git <span class="c-command">diff</span> <span class="c-command-option">--staged</span></pre>
+			<pre class="terminal">git <span class="c-command">commit</span></pre>
+			<pre class="terminal">git <span class="c-command">rm</span> <span class="c-command-post">[file]</span></pre>
+		</div>
+		<div>
+			<article>
+				<h2>Branch & Merge</h2>
+				<p>Working with Git branches and line stash.</p>
+				<h3>List branches</h3>
+				<pre class="terminal">git <span class="c-command-post">branch</span></pre>
+			</article>
+			<article>
+				<h3>Create a new branch</h3>
+				<pre class="terminal">git <span class="c-command">branch</span> <span class="c-command-post">[branch-name]</span></pre>
+			</article>
+			<article>
+				<h3>Switch to another branch</h3>
+				<pre class="terminal">git checkout [branch]</pre>
+			</article>
+			<article>
+				<h3>Create a branch and immediately switch to it</h3>
+				<pre class="terminal">git <span class="c-command">checkout</span> <span class="c-command-option">-b</span> <span class="c-command-post">[branch]</span></pre>
+			</article>
+			<h3>Merge a branch</h3>
+			<p>merge another branch into your current active one and record the merge as a commit</p>
+			<pre class="terminal">git <span class="c-command">merge</span> <span class="c-command-post">[branch]</span></pre>
+			
+			<h3>Show commit logs</h3>
+			<pre class="terminal">git <span class="c-command">log</span></pre>
+			
+			<h3>Stash away changes</h3>
+			<p>stash away the current uncommitted modifications in your working directory temporarily</p>
+			<pre class="terminal">git <span class="c-command">stash</span></pre>
+			
+			<h3>Re-apply stash</h3>
+			<pre class="terminal">git <span class="c-command">stash</span> <span class="c-command-post">apply</span></pre>
+		</div>
+		<div>
+			<h2>Share & Update</h2>
+			<p>Fetching, merging and working with updates from another repository.</p>
+			<h3>Add a git URL as an alias</h3>
+			<pre class="terminal">git remote add [alias] [url]</pre>
+			<h3>Fetch branches</h3>
+			<p>fetch down all the branches from the Git remote</p>
+			<pre class="terminal">git fetch [alias]</pre>
+			<h3>Merge branch to current</h3>
+			<p>merge a branch on the server into your currently active branch to bring it up to date</p>
+			<pre class="terminal">git merge [alias]/[branch]</pre>
+			<h3>Push update</h3>
+			<p>push the work on your branch to update that branch on the remote git repository</p>
+			<pre class="terminal">git push [alias] [branch]</pre>
+			<h3>Pull changes</h3>
+			<p>fetch from the URL tracked by the current branch and immediately try to merge in the tracked branch</p>
+			<pre class="terminal">git pull</pre>
+		</div>
+		<div>
+			<h2>Inspect & Compare</h2>
+			<p>Examining logs, diffs and object information</p>
+			<h3>Show log</h3>
+			<p>show the commit history for the currently active branch</p>
+			<pre class="terminal">git log</pre>
+			<h3>Compare commits</h3>
+			<p>show the commits on branchA that are not on branchB</p>
+			<pre class="terminal">git log branchB..branchA</pre>
+			<h3>Show changes to file</h3>
+			<p>show the commits that change file, even across renames</p>
+			<pre class="terminal">git log --follow [file]</pre>
+			<h3>Compare difference in commits</h3>
+			<p>show the diff of what is on branchA that is not on branchB</p>
+			<pre class="terminal">git diff branchB...branchA</pre>
+			<h3>Show human-readable</h3>
+			<p>show any object in Git in human-readable format</p>
+			<pre class="terminal">git show [SHA]</pre>
+		</div>
+	</div>	
 	</div>
 	<div data-role="footer">
 		<h4>Page Footer</h4>
