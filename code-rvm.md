@@ -5,29 +5,47 @@ permalink: /code/rvm/
 ---
 
 ##Add default RVM state to project
-`touch .ruby-version`  
-`echo "1.9.3@gemset-name" > .ruby-version`
+{% highlight ruby %}
+touch .ruby-version  
+echo "1.9.3@gemset-name" > .ruby-version
+{% endhighlight %}
 
 ##Copying Gemsets
-`rvm gemset copy 1.8.7@rails3 1.9.2-head@rails3`
+{% highlight ruby %}
+rvm gemset copy 1.8.7@rails3 1.9.2-head@rails3
+{% endhighlight %}
 
 ##Reset to pre-RVM state
-`rvm reset`
+{% highlight ruby %}
+rvm reset
+{% endhighlight %}
 
 ##Use system ruby (as if no rvm)
-`rvm system`
+{% highlight ruby %}
+rvm system
+{% endhighlight %}
 
 ##Empty gemset
-`rvm gemset empty my gems`
+{% highlight ruby %}
+rvm gemset empty my gems
+{% endhighlight %}
 
 ##List Known Rubies
-`rvm list known`
+{% highlight ruby %}
+rvm list known
+{% endhighlight %}
 
 ##Install Ruby Version
-`rvm install 1.9.3`
+{% highlight ruby %}
+rvm install 1.9.3
+{% endhighlight %}
 
 ##Use Ruby Version
-`rvm use 1.9.3`
+{% highlight ruby %}
+rvm use 1.9.3
+{% endhighlight %}
 
 ##Use and set as default
-`rvm use 1.9.2 --default`
+{% highlight ruby %}
+rvm use 1.9.2 --default
+{% endhighlight %}
