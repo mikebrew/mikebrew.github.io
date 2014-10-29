@@ -30,3 +30,13 @@ Enable your module:
 {% highlight sql %}
 UPDATE system SET status='1' WHERE name='module_name';
 {% endhighlight %}
+
+###Drupal 7: Clear Cached System List
+phpMyAdmin
+`If you are using phpMyAdmin, find the "cache_bootstrap" table, and delete the record with cid="system_list".`
+
+MySQL Command Line
+To update the cache using the mysql command line, type:
+{% highlight sql %}
+DELETE FROM cache_bootstrap WHERE cid='system_list';
+{% endhighlight %}
