@@ -3,10 +3,11 @@ layout: page
 title: Drupal
 permalink: /drupal/
 ---
--[Disabling or enabling modules manually in the database](#Disabling or enabling modules manually in the database)
--[Drupal 7: Clear Cached System List](#Drupal 7: Clear Cached System List)
+#Table of Contents
+*[Disabling or enabling modules manually in the database](#disable-modules)
+*[Drupal 7: Clear Cached System List](#clear-cache-systemed-list)
 
-##Disabling or enabling modules manually in the database
+##Disabling or enabling modules manually in the database <a id="disable-modules"></a>
 
 See all the modules that have been installed enabled or not:
 {% highlight sql %}
@@ -33,7 +34,7 @@ Enable your module:
 UPDATE system SET status='1' WHERE name='module_name';
 {% endhighlight %}
 
-###Drupal 7: Clear Cached System List
+###Drupal 7: Clear Cached System List <a id="clear-cache-systemed-list"></a>
 phpMyAdmin
 `If you are using phpMyAdmin, find the "cache_bootstrap" table, and delete the record with cid="system_list".`
 
