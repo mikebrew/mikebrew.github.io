@@ -4,6 +4,7 @@ title: Drupal
 permalink: /drupal/
 ---
 [Disabling or enabling modules manually in the database][]
+[Drupal 7: Clear Cached System List][]
 
 ##Disabling or enabling modules manually in the database
 
