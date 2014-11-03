@@ -3,9 +3,9 @@ layout: page
 title: Drupal
 permalink: /drupal/
 ---
-[Disabling or enabling modules manually in the database] []
+[Disabling or enabling modules manually in the database][]
 
-##Disabling or enabling modules manually in the database##
+##Disabling or enabling modules manually in the database
 
 See all the modules that have been installed enabled or not:
 {% highlight sql %}
