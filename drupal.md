@@ -3,10 +3,10 @@ layout: page
 title: Drupal
 permalink: /drupal/
 ---
-[Disabling or enabling modules manually in the database][#Disabling or enabling modules manually in the database]
+[Disabling or enabling modules manually in the database][#1212]
 [Drupal 7: Clear Cached System List][]
 
-##Disabling or enabling modules manually in the database
+##Disabling or enabling modules manually in the database [#1212]
 
 See all the modules that have been installed enabled or not:
 {% highlight sql %}
