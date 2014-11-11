@@ -20,3 +20,8 @@ Current folder will be generated into ./sites
 
 Generate and watch for changes  
 `jekyll build --watch`
+
+##Markdown syntax
+Header 2   
+`##Header 2`
+

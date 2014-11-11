@@ -39,46 +39,42 @@ git help [command]
 ###Stage & Snapshot
 
 ####Working with snapshots and the Git staging area.
-```
-git status
-git add [file]
-git reset [file]
-git diff
-git diff --staged
-git commit
-git rm [file]
-Branch & Merge
-```
-Working with Git branches and line stash.
 
-List branches
+`git status`   
+`git add [file]`   
+git reset [file]   
+git diff   
+git diff --staged   
+git commit   
+git rm [file]   
+Branch & Merge   
 
-git branch
-Create a new branch
+####Working with Git branches and line stash.
+List branches   
+`git branch`
 
-git branch [branch-name]
-Switch to another branch
+Create a new branch   
+`git branch [branch-name]`   
 
-git checkout [branch]
-Create a branch and immediately switch to it
+Switch to another branch   
+`git checkout [branch]`   
 
-git checkout -b [branch]
-Merge a branch
+Create a branch and immediately switch to it   
+`git checkout -b [branch]`   
 
-merge another branch into your current active one and record the merge as a commit
+####Merge a branch   
+merge another branch into your current active one and record the merge as a commit   
+`git merge [branch]`   
 
-git merge [branch]
-
-####Show commit logs
-`git log`
+Show commit logs   
+`git log`   
 
 ####Stash away changes
+stash away the current uncommitted modifications in your working directory temporarily   
+`git stash`   
 
-####stash away the current uncommitted modifications in your working directory temporarily
-`git stash`
-
-####Re-apply stash
-`git stash apply`
+Re-apply stash   
+`git stash apply`   
 
 ###Share & Update
 Fetching, merging and working with updates from another repository.
