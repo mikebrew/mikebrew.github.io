@@ -14,11 +14,14 @@
       </a>
 
       <div class="trigger">
+	      <!--
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+        -->
+        {% include nav.html nav=site.data.menu theonav=site.data.theo-menu %}
       </div>
     </nav>
 
