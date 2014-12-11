@@ -1,0 +1,5 @@
+<ul>
+{% for codenav in site.data.code-menu %}
+	<li><a href="{{codenav.url}}">{{codenav.text}}</a></li>
+{% endfor %}
+</ul>

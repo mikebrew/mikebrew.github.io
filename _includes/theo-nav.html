@@ -1,19 +1,8 @@
-{% assign navurl = page.url | remove: 'index.html' %}
+{% assign navurl = theocratic.url | remove: 'index.html' %}
 
-{% for item in include.nav %}
-        <a href="{{ item.url }}" class="page-link">
-            {% if item.url == navurl %}
-                <b>{{ item.text }}</b>
-            {% else %}
-                {{ item.text }}
-            {% endif %}
-        </a>
-    {% if item.subitems and navurl contains item.url %}
-        {% include nav.html nav=item.subitems %}
-    {% endif %}
-{% endfor %}
 
 {% if page.url == '/theocratic/improvingskills/' %}
+{% endif %}
 <br />
 {% for item in include.theonav %}
         <a href="{{ item.url }}" class="page-link">
@@ -28,4 +17,3 @@
     {% endif %}
 {% endfor %}
 
-{% endif %}
