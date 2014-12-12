@@ -19,3 +19,28 @@ permalink: /code/vagrant/
    * cd sites
    * drush @sitename site-install
    * Enjoy new site
+
+##Making Drupal Rin Faster
+
+Install the NFS server   
+`apt-get install nfs-kernel-server`
+
+Change the type of synced folders to `nfs` in your `config.json`.   
+{% highlight css %}   
+synced_folders": [   
+ {
+  "host_path: "data/",
+  "guest_path": "/var/www",
+  "type": "default"
+ }
+],
+{% endhighlight %}
+
+Replace `default` with `nfs`.
+
+{% highlight css %}
+  "type": "nfs"
+{% endhighlight %}
+
+Run vagrant reload inside your `vdd` directory.   
+`vagrant reload`
