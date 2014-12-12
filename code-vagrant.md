@@ -20,7 +20,7 @@ permalink: /code/vagrant/
    * `drush @sitename site-install`
    * Enjoy new site
 
-##Making Drupal Rin Faster
+##Making Drupal Run Faster
 
 Install the NFS server   
 `apt-get install nfs-kernel-server`
