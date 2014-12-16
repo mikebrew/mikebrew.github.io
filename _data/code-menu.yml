@@ -1,3 +1,7 @@
+- text: Drupal
+  url: /drupal/
+- text: Drush
+  url: /drush/
 - text: Git
   url: /code/git/
 - text: Jekyll
@@ -12,7 +16,3 @@
   url: /code/vagrant/
 - text: VI
   url: /code/vi/
-- text: Drupal
-  url: /drupal/
-- text: Drush
-  url: /drush/

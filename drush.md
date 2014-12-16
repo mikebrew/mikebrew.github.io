@@ -4,6 +4,12 @@ title: Drush
 permalink: /drush/
 ---
 
+{% for item in page.drush %}
+Hi
+{% endfor %}
+
+{{ page.categories }}
+
 #User Management
 
 ##Add new user to Drupal via command line
