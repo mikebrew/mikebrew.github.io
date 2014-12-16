@@ -2,7 +2,7 @@
 title: Michael A. Brewington
 email: mike@brewingtonmedia.com
 description: > # this means to ignore newlines until "baseurl:"
-  Nothing much to write.
+  A simple quick reference.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://brewingtonmedia.com" # the base hostname & protocol for your site
 twitter_username: brewingtonmedia

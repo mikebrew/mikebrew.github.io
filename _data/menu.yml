@@ -2,21 +2,21 @@
   url: /
 - text: Code
   url: /code/
-  subitems:
-    - text: Git
-      url: /code/git/
-    - text: Jekyll
-      url: /code/jekyll/
-    - text: PHP
-      url: /code/php/
-    - text: RVM
-      url: /code/rvm/
-    - text: Susy
-      url: /code/susy/
-    - text: Vagrant
-      url: /code/vagrant/
-    - text: VI
-      url: /code/vi/
+#   subitems:
+#     - text: Git
+#       url: /code/git/
+#     - text: Jekyll
+#       url: /code/jekyll/
+#     - text: PHP
+#       url: /code/php/
+#     - text: RVM
+#       url: /code/rvm/
+#     - text: Susy
+#       url: /code/susy/
+#     - text: Vagrant
+#       url: /code/vagrant/
+#     - text: VI
+#       url: /code/vi/
 - text: Drupal
   url: /drupal/
 - text: Drush

@@ -10,14 +10,17 @@
     <div class="page-content">
 	    
 		<div class="wrapper">
-		{{ content }}
-		</div>
-		<aside class="sidebar-first">
+			<div class="content">
+				{{ content }}
+			</div>
+			<aside class="sidebar-first">
 		    {% include code-nav.html %}
 	    </aside>
 		<aside class="sidebar-second">
-			Sidebar Second
+			
 		</aside>
+		</div>
+		
     </div>
 
     {% include footer.html %}
