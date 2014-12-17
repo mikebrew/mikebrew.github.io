@@ -7,9 +7,9 @@ permalink: /code/git/
 * This will become a table of contents
 {:toc}
 
-##Overview
 
-###Configure
+Configure
+--------------
 
 - Set up your user name and email address so that your commits are recorded properly.
 
@@ -17,7 +17,8 @@ permalink: /code/git/
 `git config --global user.name "My Name"`  
 `git config --global user.email "user@email.com"`
 
-##Initialize, stage and commit
+Initialize, Stage and Commit
+--------------------------------
 
 - Initialize a new git repository
 - stage all the files in the directory 

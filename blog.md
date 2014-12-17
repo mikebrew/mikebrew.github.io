@@ -1,15 +1,8 @@
 ---
-layout: default
+layout: page
+title: Blog
+permalink: /blog/
 ---
-
-<div class="home">
-	<div>
-		<h1>Cheat Sheet</h1>
-		<p>This site is set up as a simple quick reference to code snippets and articles that were useful to me.</p>
-	</div>
-
-<!--
-  <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -22,6 +15,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
--->
-
-</div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

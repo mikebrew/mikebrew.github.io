@@ -1,7 +1,7 @@
 - text: Home
   url: /
-- text: Code
-  url: /code/
+- text: About
+  url: /about/
 #   subitems:
 #     - text: Git
 #       url: /code/git/
@@ -17,7 +17,5 @@
 #       url: /code/vagrant/
 #     - text: VI
 #       url: /code/vi/
-- text: Drupal
-  url: /drupal/
-- text: Drush
-  url: /drush/
+- text: Blog
+  url: /blog/
