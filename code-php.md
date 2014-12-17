@@ -4,6 +4,9 @@ title: PHP
 permalink: /code/php/
 ---
 
+* This will become a table of contents (this text will be ignored)
+{:toc}
+
 ##Date
 
 Character 	| Return Values				|	Description

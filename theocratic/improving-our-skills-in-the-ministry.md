@@ -4,15 +4,9 @@ title: Improving Our Skills in the Ministry
 permalink: /theocratic/improvingskills/
 ---
 
-# Table of Contents
-* [Responding to Potential Conversation Stoppers](#responding-to-potential-conversation-stoppers)
-* [Preparing Our Opening Words](#preparing-our-opening-words)
-* [Initiating a Conversation in Order to Witness Informally](#initiating-a-conversation-in-order-to-witness-informally)
-* [Laying the Groundwork for a Return Visit](#laying-the-groundwork-for-a-return-visit)
-* [Showing Personal Interest](#showing-personal-interest)
-* [Demonstrating a Bible Study by Using the Bible Teach Book](#demonstrating-a-bible-study-by-using-the-bible-teach-book)
-* [Responding to an Irate Householder](#responding-to-an-irate-householder)
-* [Witnessing Through an Intercom](#witnessing-through-an-intercom)
+* This will become a table of contents (this text will be ignored)
+{:toc}
+
 
 Responding to Potential Conversation Stoppers
 ----------------------------------------------

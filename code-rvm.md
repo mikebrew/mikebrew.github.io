@@ -4,6 +4,9 @@ title: RVM
 permalink: /code/rvm/
 ---
 
+* This will become a table of contents (this text will be ignored)
+{:toc}
+
 ##Add default RVM state to project
 {% highlight ruby %}
 touch .ruby-version  

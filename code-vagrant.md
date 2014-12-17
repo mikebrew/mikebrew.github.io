@@ -4,6 +4,9 @@ title: Vagrant
 permalink: /code/vagrant/
 ---
 
+* This will become a table of contents (this text will be ignored)
+{:toc}
+
 ##Adding a new install to the Vagrant environment
 
    * append site to the `config.json` file

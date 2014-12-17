@@ -4,6 +4,8 @@ title: Ministry Topics
 permalink: /theocratic/ministry-topics/
 ---
 
+* This will become a table of contents (this text will be ignored)
+{:toc}
 
 Directions
 -----------

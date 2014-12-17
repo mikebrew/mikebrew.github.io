@@ -3,9 +3,10 @@ layout: page
 title: Drupal
 permalink: /drupal/
 ---
-#Table of Contents
-* [Disabling or enabling modules manually in the database](#disable-modules)
-* [Clear Cached System List from database](#clear-cache-systemed-list)
+
+* This will become a table of contents (this text will be ignored)
+{:toc}
+
 
 ##Disabling or enabling modules manually in the database <a id="disable-modules"></a>
 

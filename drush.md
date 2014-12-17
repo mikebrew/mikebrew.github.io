@@ -4,11 +4,8 @@ title: Drush
 permalink: /drush/
 ---
 
-{% for item in page.drush %}
-Hi
-{% endfor %}
-
-{{ page.categories }}
+* This will become a table of contents (this text will be ignored)
+{:toc}
 
 #User Management
 

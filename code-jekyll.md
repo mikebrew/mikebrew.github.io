@@ -4,21 +4,13 @@ title: Jekyll
 permalink: /code/jekyll/
 ---
 
-# Table of Contents   
-  * Jekyll set-up
-	  - [Create a new blog](#create-new-blog)
-	  - [Generate development server](#generate-development-server)
-	  - [Build environment](#build-environment)
-  * [Markdown Cheat Sheet](#markdown-cheat-sheet)
-	  - [Headers](#headers)
-	  - [Links](#links)
-	  - [Images](#images)
 
-[jekyllrb.com](http://jekyllrb.com/)   
-[jekyll-gh](https://github.com/jekyll/jekyll)   
-[jekyll-help](https://github.com/jekyll/jekyll-help)
+* This will become a table of contents (this text will be ignored)
+{:toc}
 
-##Create new blog
+
+Create new blog
+-------------------
 To install in a new directory  
 `jekyll new myblog`  
 or install in current directory  
@@ -84,6 +76,9 @@ Will jump to sections:
 Content for chapter one.
 {% endhighlight %}
 
-###Images
-
+###Automated Table of Content
+{% highlight css %}
+* This will become a table of contents (this text will be ignored)
+{:toc}
+{% endhighlight %}
   
