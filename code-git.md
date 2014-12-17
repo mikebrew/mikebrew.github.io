@@ -4,6 +4,9 @@ title: GIT
 permalink: /code/git/
 ---
 
+* This will become a table of contents
+{:toc}
+
 ##Overview
 
 ###Configure
@@ -28,13 +31,11 @@ permalink: /code/git/
 ###Setup & Init
 
 ####Git configuration, and repository initialization & cloning.
-```
-git config [key] [value]  
-git config --global [key] [value]  
-git init  
-git clone [url]  
-git help [command]  
-```
+`git config [key] [value]`   
+`git config --global [key] [value]`  
+`git init`  
+`git clone [url]`  
+`git help [command]`  
 
 ###Stage & Snapshot
 
@@ -42,12 +43,13 @@ git help [command]
 
 `git status`   
 `git add [file]`   
-git reset [file]   
-git diff   
-git diff --staged   
-git commit   
-git rm [file]   
-Branch & Merge   
+`git reset [file]`   
+`git diff`   
+`git diff --staged`   
+`git commit`   
+`git rm [file]`   
+
+###Branch & Merge   
 
 ####Working with Git branches and line stash.
 List branches   
@@ -103,28 +105,27 @@ fetch from the URL tracked by the current branch and immediately try to merge in
 
 Examining logs, diffs and object information
 
-Show log
+####Show log
 
-show the commit history for the currently active branch
+show the commit history for the currently active branch   
+`git log`
 
-git log
-Compare commits
+###Compare commits
 
-show the commits on branchA that are not on branchB
+Show the commits on branchA that are not on branchB   
+`git log branchB..branchA`
 
-git log branchB..branchA
-Show changes to file
+####Show changes to file
 
-show the commits that change file, even across renames
+show the commits that change file, even across renames   
+`git log --follow [file]`
 
-git log --follow [file]
-Compare difference in commits
+####Compare difference in commits
 
-show the diff of what is on branchA that is not on branchB
+show the diff of what is on branchA that is not on branchB   
+`git diff branchB...branchA`
 
-git diff branchB...branchA
-Show human-readable
+####Show human-readable
 
-show any object in Git in human-readable format
-
-git show [SHA]
+show any object in Git in human-readable format   
+`git show [SHA]`
