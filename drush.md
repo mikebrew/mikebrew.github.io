@@ -10,20 +10,20 @@ permalink: /drush/
 User Management
 ------------------
 
-##Add new user to Drupal via command line
+###Add new user to Drupal via command line
 `drush user-create testuser --mail="test@example.com" --password="apassword"`
 
-##Add user to a role
+###Add user to a role
 `drush user-add-role "blog editor" testuser`
 
-##Block Drupal User
+###Block Drupal User
 `drush user-block someuser`
 
-##Remove role from a user
+###Remove role from a user
 `drush user-remove-role "blog editor" testuser`
 
-##Find user information
+###Find user information
 `drush user-information testuser`
 
-##Reset users password
+###Reset users password
 `drush user-password testuser --password="mypassword"`
