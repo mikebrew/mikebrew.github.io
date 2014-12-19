@@ -10,6 +10,8 @@
   url: /code/php/
 - text: RVM
   url: /code/rvm/
+- text: Sass
+  url: /code/sass/
 - text: Susy
   url: /code/susy/
 - text: Vagrant
