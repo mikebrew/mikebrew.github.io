@@ -4,7 +4,8 @@ title: Markdown
 permalink: /code/markdown/
 ---
 
-# Pandoc
+Pandoc
+---------
 
 ## Output single file
 
