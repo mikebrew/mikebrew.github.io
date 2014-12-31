@@ -6,6 +6,8 @@
   url: /code/git/
 - text: Jekyll
   url: /code/jekyll/
+- text: Markdown
+  url: /code/markdown/
 - text: PHP
   url: /code/php/
 - text: RVM
