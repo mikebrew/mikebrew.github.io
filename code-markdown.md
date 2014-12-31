@@ -5,8 +5,8 @@ permalink: /code/markdown/
 ---
 
 Pandoc
----------
+------------
 
-## Output single file
+###Output single file
 
 `pandoc -o output.html input.txt`
