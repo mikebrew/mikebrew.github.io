@@ -4,6 +4,14 @@ title: Markdown
 permalink: /code/markdown/
 ---
 
+Markdown
+----------
+
+###Strong
+`**Strong words`   
+will produce   
+`<strong>Strong words</strong>`   
+
 Pandoc
 ------------
 
