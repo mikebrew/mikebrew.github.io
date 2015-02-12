@@ -44,3 +44,22 @@ To update the cache using the mysql command line, type:
 {% highlight sql %}
 DELETE FROM cache_bootstrap WHERE cid='system_list';
 {% endhighlight %}
+
+##Checking to see if a region is occupied
+{% highlight php %}
+<?php
+  if($page['sidebar_first']) {
+    // do something
+  }
+?>
+{% endhighlight %}
+
+{% highlight php %}
+<?php if($page['hero']): ?>
+// Do block of something
+<?php endif; ?>
+{% endhighlight %}
+
+##Pathauto pattern
+Automatically generates path according to placement in the menu   
+`[node:menu-link:parents:join-path]/[node:title]`
