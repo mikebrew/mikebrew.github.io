@@ -27,3 +27,9 @@ User Management
 
 ###Reset users password
 `drush user-password testuser --password="mypassword"`
+
+###Generate one-tiem login
+`drush uli`   
+
+###Export the database
+`drush sql-dump > mydatabase.sql`

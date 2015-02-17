@@ -63,3 +63,4 @@ DELETE FROM cache_bootstrap WHERE cid='system_list';
 ##Pathauto pattern
 Automatically generates path according to placement in the menu   
 `[node:menu-link:parents:join-path]/[node:title]`
+
