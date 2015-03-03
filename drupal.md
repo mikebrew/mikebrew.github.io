@@ -64,3 +64,6 @@ DELETE FROM cache_bootstrap WHERE cid='system_list';
 Automatically generates path according to placement in the menu   
 `[node:menu-link:parents:join-path]/[node:title]`
 
+##Force deletion of content type   
+Delete by going to the url `/admin/structure/types/manage/content-machine-name/delete`   
+
