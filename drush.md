@@ -33,3 +33,9 @@ User Management
 
 ###Export the database
 `drush sql-dump > mydatabase.sql`
+
+###Change default theme   
+`drush vset theme_default theme_name`   
+
+###Change admin theme   
+`drush vset admin_theme theme_name`   
