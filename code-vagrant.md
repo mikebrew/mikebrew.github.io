@@ -46,4 +46,13 @@ Replace `default` with `nfs`.
 {% endhighlight %}
 
 Run vagrant reload inside your `vdd` directory.   
-`vagrant reload`
+`vagrant reload`   
+
+##Vagrant NFS Export File Invalid   
+NFS is reporting that your exports file is invalid. Vagrant does   
+
+{% highlight css %} 
+vagrant halt // Yes, the VM is running, despite death rattle featured above.
+rm -rf /etc/exports // Remove the exports file. 
+vagrant up
+{% endhighlight %}
