@@ -10,40 +10,40 @@ permalink: /drush/
 User Management
 ------------------
 
-###Full list of all users
+Full list of all users   
 `drush user-list`
 
-###Users by the name of admin or tester
+Users by the name of admin or tester   
 `drush user-list --names=admin,tester`
 
-###Users with the role editor or publisher
+Users with the role editor or publisher   
 `drush user-list --roles=editor,publisher`
 
-###Blocked users with the role blogger
+Blocked users with the role blogger   
 `drush user-list --status=blocked --roles=blogger`
 
-###Users with the specified emails
+Users with the specified emails   
 `drush user-list --emails=nospam@please.com,me@myself.com`
 
-###Add new user to Drupal via command line
+Add new user to Drupal via command line   
 `drush user-create testuser --mail="test@example.com" --password="apassword"`
 
-###Add user to a role
+Add user to a role   
 `drush user-add-role "blog editor" testuser`
 
-###Block Drupal User
+Block Drupal User   
 `drush user-block someuser`
 
-###Remove role from a user
+Remove role from a user   
 `drush user-remove-role "blog editor" testuser`
 
-###Find user information
+Find user information   
 `drush user-information testuser`
 
-###Reset users password
+Reset users password   
 `drush user-password testuser --password="mypassword"`
 
-###Generate one-tiem login
+Generate one-time login   
 `drush uli`   
 
 Database
