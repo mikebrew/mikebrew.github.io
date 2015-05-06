@@ -10,6 +10,21 @@ permalink: /drush/
 User Management
 ------------------
 
+###Full list of all users
+`drush user-list`
+
+###Users by the name of admin or tester
+`drush user-list --names=admin,tester`
+
+###Users with the role editor or publisher
+`drush user-list --roles=editor,publisher`
+
+###Blocked users with the role blogger
+`drush user-list --status=blocked --roles=blogger`
+
+###Users with the specified emails
+`drush user-list --emails=nospam@please.com,me@myself.com`
+
 ###Add new user to Drupal via command line
 `drush user-create testuser --mail="test@example.com" --password="apassword"`
 
