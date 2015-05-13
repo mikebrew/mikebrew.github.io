@@ -52,6 +52,9 @@ Database
 Export the database   
 `drush sql-dump > mydatabase.sql`
 
+Import a database   
+`drush sql-cli < mydatabase.sql`
+
 Theme
 ------------------
 Change default theme   
