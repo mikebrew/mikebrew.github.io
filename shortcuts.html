@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>mikebrew.github.io</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,15 +16,112 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <title>Shortcuts</title>
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
-      <h1>Shortcuts</h1>
-      <p>
-        Some text will go here.
-      </p>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brewington</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <!-- <li><a href="#about">About</a></li> -->
+          <!-- <li><a href="#contact">Contact</a></li> -->
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar/">Default</a></li>
+          <li><a href="../navbar-static-top/">Static top</a></li>
+          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+        </ul> -->
+      </div><!--/.nav-collapse -->
     </div>
+  </nav>
+    <div class="container-fluid">
+      <div class="row">
+
+    <div class="container">
+      <nav class="md-col-4 bg-faded sidebar pull-right">
+        <ul class="nav nav-pills nav-stacked flex-column">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#drush">Drush</a></li>
+        </ul>
+      </nav>
+      <section class="md-col-8">
+        <h1><a name="drush"></a>Drush</h1>
+        <h2>User Management</h2>
+        <h3>Full list of all users</h3>
+        <code>drush user-list</code>
+        <h3>Users by the name of admin or tester</h3>
+        <code>drush user-list --names=admin,tester</code>
+
+        <h3>Users with the role editor or publisher</h3>
+        <code>drush user-list --roles=editor,publisher</code>
+
+        <h3>Blocked users with the role blogger</h3>
+        <code>drush user-list --status=blocked --roles=blogger</code>
+
+        <h3>Users with the specified emails</h3>
+        <code>drush user-list --emails=nospam@please.com,me@myself.com</code>
+
+        <h3>Add new user to Drupal via command line</h3>
+        <code>drush user-create testuser --mail="test@example.com" --password="apassword"</code>
+
+        <h3>Add user to a role</h3>
+        <code>drush user-add-role "blog editor" testuser</code>
+
+        <h3>Block Drupal User</h3>
+        <code>drush user-block someuser</code>
+
+        <h3>Remove role from a user</h3>
+        <code>drush user-remove-role "blog editor" testuser</code>
+
+        <h3>Find user information</h3>
+        <code>drush user-information testuser</code>
+
+        <h3>Reset users password</h3>
+        <code>drush user-password testuser --password="mypassword"</code>
+
+        <h3>Generate one-time login</h3>
+        <code>drush uli</code>
+
+        <h2>Database</h2>
+
+        <h3>Export the database</h3>
+        <pre><code>drush sql-dump > mydatabase.sql</code></pre>
+
+        <h3>Import a database</h3>
+        <code>drush sql-cli < mydatabase.sql</code>
+
+        <h2>Theme</h2>
+        <h3>Change default theme</h3>
+        <pre><code>drush vset theme_default theme_name</code></pre>
+
+        <h3>Change admin theme</h3>
+        <code>drush vset admin_theme theme_name</code>
+      </section>
+    </div>
+  </div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
