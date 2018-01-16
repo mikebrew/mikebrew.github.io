@@ -1,3 +1,4 @@
+body { padding-top: 70px; }
 h1 {
   color: #990000;
 }
@@ -5,3 +6,7 @@ h2 {
   color:rgb(20, 108, 212);
 }
 h3 {}
+section {
+  padding-top: 40px;
+  margin-top: -40px;
+}
