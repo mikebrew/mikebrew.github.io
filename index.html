@@ -56,53 +56,68 @@
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-    <div class="container-fluid">
-      <div class="row">
+
 
     <div class="container">
       <nav class="md-col-4 bg-faded sidebar pull-right">
         <ul class="nav nav-pills nav-stacked flex-column">
           <li><a href="#top">Home</a></li>
+					<li><a href="#atom">Atom</a></li>
           <li><a href="#drush">Drush</a></li>
         </ul>
       </nav>
-      <section class="md-col-8">
+      <div class="md-col-8">
+				<section>
+					<h1><a name="atom"></a>Atom</h1>
+					<h2>Keyboard Shortcuts</h2>
+					<p>Wrap element in tag: <code>Shift + alt + W</code></p>
+					<p>Multiple selections: <code>Command + D</code></p>
+					<p>Toggle tree view: <code>Command + \</code></p>
+					<h3>Comments</h3>
+					<div class="well"><p>Toggle comments <code>Command + /</code></p></div>
+					<h3>Bracket matcher</h3>
+					<div class="well">
+						<p>Go to matching bracet <code>Control + m</code></p>
+						<p>Closing tag <code>Option + Command + .</code></p>
+					</div>
+				</section>
+				<section>
         <h1><a name="drush"></a>Drush</h1>
         <h2>User Management</h2>
-        <h3>Full list of all users</h3>
+        <div class="col-md-6"><h3>Full list of all users</h3>
         <pre>drush user-list</pre>
         <h3>Users by the name of admin or tester</h3>
-        <pre>drush user-list --names=admin,tester</pre>
+        <pre>drush user-list --names=admin,tester</pre></div>
 
-        <h3>Users with the role editor or publisher</h3>
-        <pre>drush user-list --roles=editor,publisher</pre>
+        <div class="col-md-6"><h3>Users with the role editor or publisher</h3>
+        <pre>drush user-list --roles=editor,publisher</pre></div>
 
-        <h3>Blocked users with the role blogger</h3>
-        <pre>drush user-list --status=blocked --roles=blogger</pre>
+        <div class="col-md-6"><h3>Blocked users with the role blogger</h3>
+        <pre>drush user-list --status=blocked --roles=blogger</pre></div>
 
-        <h3>Users with the specified emails</h3>
-        <pre>drush user-list --emails=nospam@please.com,me@myself.com</pre>
+        <div class="col-md-6"><h3>Users with the specified emails</h3>
+        <pre>drush user-list --emails=nospam@please.com,me@myself.com</pre></div>
 
-        <h3>Add new user to Drupal via command line</h3>
-        <pre>drush user-create testuser --mail="test@example.com" --password="apassword"</pre>
+        <div class="col-md-6"><h3>Add new user to Drupal via command line</h3>
+        <pre>drush user-create testuser --mail="test@example.com" --password="apassword"</pre></div>
 
-        <h3>Add user to a role</h3>
-        <pre>drush user-add-role "blog editor" testuser</pre>
+        <div class="col-md-6"><h3>Add user to a role</h3>
+        <pre>drush user-add-role "blog editor" testuser</pre></div>
 
-        <h3>Block Drupal User</h3>
-        <pre>drush user-block someuser</pre>
+        <div class="col-md-6"><h3>Block Drupal User</h3>
+        <pre>drush user-block someuser</pre></div>
 
-        <h3>Remove role from a user</h3>
-        <pre>drush user-remove-role "blog editor" testuser</pre>
+        <div class="col-md-6"><h3>Remove role from a user</h3>
+        <pre>drush user-remove-role "blog editor" testuser</pre></div>
 
-        <h3>Find user information</h3>
-        <pre>drush user-information testuser</pre>
+        <div class="col-md-6"><h3>Find user information</h3>
+        <pre>drush user-information testuser</pre></div>
 
-        <h3>Reset users password</h3>
-        <pre>drush user-password testuser --password="mypassword"</pre>
+        <div class="col-md-6"><h3>Reset users password</h3>
+        <pre>drush user-password testuser --password="mypassword"</pre></div>
 
-        <h3>Generate one-time login</h3>
-        <pre>drush uli</pre>
+        <div class="col-md-6"><h3>Generate one-time login</h3>
+        <pre>drush uli</pre></div>
 
         <h2>Database</h2>
 
@@ -118,10 +133,9 @@
 
         <h3>Change admin theme</h3>
         <pre>drush vset admin_theme theme_name</pre>
-      </section>
+      </section></div>
     </div>
-  </div>
-</div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
