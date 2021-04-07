@@ -14,7 +14,7 @@ Configure
 - Set up your user name and email address so that your commits are recorded properly.
 
 ####Set global name of user
-`git config --global user.name "My Name"`  
+`git config --global user.name "Your Name"`  
 `git config --global user.email "user@email.com"`
 
 Initialize, Stage and Commit
