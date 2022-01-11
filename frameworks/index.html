@@ -86,6 +86,7 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#frameworks">Frameworks</a></li>
             <li><a href="#tailwindcss">TailwindCSS</a></li>
+            <li><a href="#svelte">Svelte</a></li>
             <li><a href="#mkdocs">MkDocs</a></li>
     </ul>
 </div></div>
@@ -112,6 +113,19 @@ npx tailwindcss init -p
 </code></pre>
 <h3 id="start-project">Start project</h3>
 <pre><code>npm start
+</code></pre>
+<h2 id="svelte">Svelte</h2>
+<h3 id="create-a-new-project">Create a new project</h3>
+<pre><code>npx degit sveltejs/template my-svelte-project
+cd my-svelte-project
+node scripts/setupTypeScript.js //Optional, convert to TypeScript
+npm install
+</code></pre>
+<h3 id="run-project">Run project</h3>
+<pre><code>npm run dev
+</code></pre>
+<h3 id="check-errors">Check errors</h3>
+<pre><code>npx svelte-check
 </code></pre>
 <h2 id="mkdocs">MkDocs</h2>
 <h3 id="installation">Installation</h3>
