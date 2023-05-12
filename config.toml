@@ -1,7 +1,7 @@
 baseURL = 'https://mikebrew.github.io/'
 languageCode = 'en-us'
 title = 'mikebrew.github.io'
-theme = 'ananke'
+theme = 'ace-documentation'
 sectionPagesMenu = 'main'
 canonifyURLs = true
 relativeURLs = true
