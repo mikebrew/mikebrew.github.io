@@ -4,6 +4,7 @@ title = 'mikebrew.github.io'
 theme = 'ananke'
 sectionPagesMenu = 'main'
 canonifyURLs = true
+relativeURLs = true
 
 pygmentsStyle = "monokailight"
 
