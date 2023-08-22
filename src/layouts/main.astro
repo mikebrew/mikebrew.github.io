@@ -1,17 +1,54 @@
 ---
-import '../styles/global.css';
-
+import PageContent from "../components/PageContent.astro";
+import RightSidebar from "../components/RightSidebar.astro";
+import "../styles/global.scss";
 const { content } = Astro.props;
 ---
 
-<html lang={content.lang || 'en'}>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang={content.lang || "en"}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{content.title}</title>
+  </head>
+  <body class="bg-slate-100">
+    <header
+      class="p-3 bg-slate-100 bg-opacity-80 backdrop-blur-md border-b text-slate-900"
+    >
+      <nav class="sticky top-0 z-10 w-full">
+        <a href="/" class="max-w-7xl mx-auto flex justify-between items-center">
+          <h1>mikebrew.github.io</h1>
+        </a>
+      </nav>
+    </header>
+    <div class="grid grid-cols-12">
+      <div class="col-span-3 sticky top-0 pt-12 h-screen flex">
+        <div class="ml-auto">
+          <aside>
+            <nav class="w-64 p-4 border-r">
+              <ul class="space-y-2 font-medium">
+                <li><a href="/">Home</a></li>
+                <li><a href="/drupal">Drupal</a></li>
+                <li><a href="/git">Git</a></li>
+                <li><a href="/markdown">Markdown</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+      <main class="py-4 px-8 pb-32 col-span-6 overflow-auto">
+        <div>
+          <div>
+            <PageContent content={content}>
+              <slot />
+            </PageContent>
+          </div>
+        </div>
+      </main>
+      <div class="col-span-3 sticky top-0 h-screen flex">
+        <RightSidebar content={content} />
+      </div>
+    </div>
+  </body>
 </html>

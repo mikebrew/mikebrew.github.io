@@ -1,12 +1,12 @@
 ---
-title: Shiki demo
+title: mikebrew.github.io
 layout: ../layouts/main.astro
 ---
 
-# Shiki demo
+# Cheetsheets
 
 ```js
-var foo = 'bar';
+var foo = "bar";
 
 function doSomething() {
   return foo;
