@@ -1,0 +1,115 @@
+---
+import Navigation from '../components/Navigation.astro';
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  SITE_DEFAULT_OG_IMAGE,
+} from '../site_config';
+
+export interface Props {
+  /** Title of the page */
+	title?: string;
+  /** Description of the page */
+  description?: string;
+  /** OpenGraph thumbnail of the page */
+  thumbnail?: {
+    /** URL of the thumbnail */
+    src: string;
+    /** Alt text of the thumbnail */
+    alt: string;
+  };
+  /** Canonical URL of the page */
+  canonical?: string;
+}
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  thumbnail = {
+    src: SITE_DEFAULT_OG_IMAGE,
+    alt: SITE_TITLE
+  },
+  canonical,
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/mikebrewington_icon.png" />
+		<title>{title}</title>
+    <meta name="description" content={description}>
+		<meta name="generator" content={Astro.generator} />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={thumbnail.src} />
+    <meta property="og:url" content={Astro.request.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+  <script>
+    let copyButtonLabel = "Copy Code";
+    let codeBlocks = Array.from(document.querySelectorAll("pre"));
+
+    for (let codeBlock of codeBlocks) {
+      let wrapper = document.createElement("div");
+      wrapper.style.position = "relative";
+
+      let copyButton = document.createElement("button");
+      copyButton.className = "copy-code";
+      copyButton.innerHTML = copyButtonLabel;
+
+      codeBlock.setAttribute("tabindex", "0");
+      codeBlock.appendChild(copyButton);
+      // wrap codebock with relative parent element
+      codeBlock.parentNode.insertBefore(wrapper, codeBlock);
+      wrapper.appendChild(codeBlock);
+
+      copyButton.addEventListener("click", async () => {
+        await copyCode(codeBlock, copyButton);
+      });
+    }
+
+    async function copyCode(block, button) {
+      let code = block.querySelector("code");
+      let text = code.innerText;
+
+      await navigator.clipboard.writeText(text);
+
+      // visual feedback that task is completed
+      button.innerText = "Code Copied";
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 700);
+    }
+  </script>
+  <style is:global>
+    .copy-code {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3730a3;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    }
+
+    .copy-code:hover {
+      background-color: #312e81;
+    }
+    pre.astro-code {
+      padding: 2rem 1.5rem;
+    }
+  </style>
+	</head>
+
+  <body class="dark:bg-zinc-900 scroll-smooth dark:[color-scheme:dark]">
+    <Navigation/>
+		<slot/>
+	</body>
+</html>
