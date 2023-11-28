@@ -4,7 +4,7 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   site: "https://mikebrew.github.io",
-  base: "/dist",
+  //base: "/dist",
   integrations: [
     starlight({
       title: "My Docs",
