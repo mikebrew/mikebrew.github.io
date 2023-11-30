@@ -10,12 +10,13 @@ export const SITE_DEFAULT_OG_IMAGE = "/assets/og-image.png";
 // Define the left sidebar items here.
 // The path should match the folder name in src/content/docs/
 export const SIDEBAR_ITEMS = {
-  "Get Started": [
-    "/docs/get-started/introduction",
-    "/docs/get-started/installation",
-  ],
-  Tutorials: ["/docs/tutorials/build-x"],
-  Guides: ["/docs/guides/migrate-from-z"],
+  // "Get Started": [
+  //   "/docs/get-started/introduction",
+  //   "/docs/get-started/installation",
+  // ],
+  Svelte: ["/docs/svelte/getting-started", "/docs/svelte/working-with-data"],
+  // Tutorials: ["/docs/tutorials/build-x"],
+  // Guides: ["/docs/guides/migrate-from-z"],
   Cheatsheets: [
     "/docs/cheatsheets/drupal",
     "/docs/cheatsheets/git",
